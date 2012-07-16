@@ -1,3 +1,7 @@
-This uses Miso Dataset to get violations from a resource and show a CSV file you can use.To get running1.) Get Miso Dataset from http://misoproject.com/dataset/ and put it in js/lib2.) If your Sonar URL is different than what is in main.js, you will need to change it.To use1.) Go to the index.html2.) It will default to resource = 1 and get any child resources from that. 	You can specify your own resource by adding it as a parameter: dataset/index.html?resource=2
+This uses Miso Dataset to get violations from a resource in Sonar (http://www.sonarsource.org/) and show a CSV file you can use. I wrote this as a quick tool for work since the violation to CSV plugin doesn't work. To get running1.) Get Miso Dataset from http://misoproject.com/dataset/ and put it in js/lib2.) If your Sonar URL is different than what is in main.js, you will need to change it.To use1.) Go to the index.html2.) It will default to resource = 1 and get any child resources from that. 	You can specify your own resource by adding it as a parameter: dataset/index.html?resource=2
 
 Note: Sonar's limit on the number of results for violations is 5000. You should be able to change that with adding "&limit=x" to the end of the call to the API but I have never gotten that to successfully work
+
+Todo (let me know if you would like these things, the people at work seem to like it as is)
+1.) Add some sort of UI
+2.) Add the option to export it in a CSV file instead of just outputting the info as HTML
